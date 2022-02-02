@@ -12,6 +12,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
@@ -42,6 +43,6 @@
   },
   "homepage": "http://better36524.github.io/practice_todo_react_app",
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }
