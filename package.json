@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "http://better36524.github.io/practice_todo_react_app",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
