@@ -34,7 +34,7 @@ export function call(api, method, request) {
             // 추가된 부분
             console.log(error.status);
             if (error.status === 403) {
-                window.location.href = "/login"; // redirect
+                window.location.href = "/practice_todo_react_app/login"; // redirect
             }
             return Promise.reject(error);
         });
@@ -49,14 +49,14 @@ export function signin(userDTO) {
                 // 로컬 스토리지에 토큰 저장
                 localStorage.setItem("ACCESS_TOKEN", response.token);
                 // token이 존재하는 경우 Todo 화면으로 리디렉트
-                window.location.href = "/";
+                window.location.href = "/practice_todo_react_app/";
             }
         });
 }
 
 export function signout() {
     localStorage.setItem("ACCESS_TOKEN", null);
-    window.location.href = "/login";
+    window.location.href = "/practice_todo_react_app/login";
 }
 
 export function signup(userDTO) {

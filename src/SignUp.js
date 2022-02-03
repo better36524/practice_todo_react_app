@@ -19,7 +19,7 @@ class SignUp extends React.Component {
         signup({ email: email, username: username, password: password }).then(
             (respnse) => {
                 // 계정 생성 성공 시 login 페이지로 리디렉트
-                window.location.href = "/login";
+                window.location.href = "/practice_todo_react_app/login";
             }
         );
     }
@@ -82,7 +82,7 @@ class SignUp extends React.Component {
                     </Grid>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link href="/login" variant="body2">
+                            <Link href="/practice_todo_react_app/login" variant="body2">
                                 이미 계정이 있습니까? 로그인 하세요.
                             </Link>
                         </Grid>
