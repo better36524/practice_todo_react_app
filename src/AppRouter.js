@@ -10,9 +10,7 @@ import SignUp from "./SignUp";
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
-            {"Copyright "}
-            fsoftwareengineer, {new Date().getFullYear()}
-            {"."}
+            {"bottom"}
         </Typography>
     );
 }
@@ -21,12 +19,12 @@ class AppRouter extends React.Component {
     render() {
         return (
             <div>
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <div>
                         <Routes>
-                            <Route path="practice_todo_react_app/login" element={<Login />}/>
-                            <Route path="practice_todo_react_app/signup" element={<SignUp />}/>
-                            <Route path="practice_todo_react_app/" element={<App />}/>
+                            <Route path="/login" element={<Login />}/>
+                            <Route path="/signup" element={<SignUp />}/>
+                            <Route path="/" element={<App />}/>
                         </Routes>
                     </div>
                     <Box mt={5}>
